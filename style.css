@@ -28,7 +28,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 1140px;
+    max-width: 1280px;
     width: 100%;
     height: 100vh;
 }
@@ -69,6 +69,8 @@ h3 {
 
 #home h3 {
     margin-bottom: 48px;
+    font-size: 44px;
+    width: 100%;
 }
 
 #home-img-div {
@@ -78,12 +80,12 @@ h3 {
 
 #home-img-div img{
     height: 98.5vh;
-    width: 640px;
+    width: 620px;
     filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
 }
 
 #logo {
-    height: 600px;
+    height: 540px;
     position: absolute;
     left: -32%;
     top: 7%;
