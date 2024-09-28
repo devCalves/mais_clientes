@@ -35,7 +35,7 @@ body {
 
 span {
     color: var(--amarelo);
-    font-weight: bold;
+    font-weight: 900;
 }
 
 
@@ -111,6 +111,10 @@ h3 {
     background-color: var(--branco);
 }
 
+.fundo-claro span {
+    color: var(--claro);
+}
+
 #benefits {
     color: var(--preto);
     text-align: center;
@@ -124,6 +128,7 @@ h3 {
     margin: 48px;
     font-size: 24px;
     font-weight: 400;
+    text-transform: normal-case;
 }
 
 #benefits ul {
@@ -140,14 +145,17 @@ h3 {
 }
 
 #benefits ul h2 {
-    font-size: 36px;
+    font-size: 40px;
+    margin: 0;
+    color: var(--amarelo);
+    border-bottom: 1px solid var(--musgo);
 }
 
 #benefits ul li {
     width: 100%;
-    margin: 8px 0;
     font-weight: bold;
     color: var(--branco);
+    font-size: 18px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     align-items: center;
 }
@@ -196,6 +204,7 @@ p {
 #profissao h2 {
     color: var(--amarelo);
     font-size: 40px;
+    font-weight: 900;
     margin: 32px 0;
 }
 
@@ -285,6 +294,10 @@ iframe {
     font-size: 48px;
 }
 
+.cta-container span {
+    font-weight: 700;
+}
+
 .cta-container p {
     text-align: left;
     padding: 4px;
@@ -332,7 +345,7 @@ iframe {
     text-align: center;
     font-size: 48px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 700;
 }
 
 #footer {
