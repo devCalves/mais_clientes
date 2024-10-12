@@ -215,6 +215,7 @@ p {
 
 #profissao ul li {
   padding: 16px;
+  width: 25%;
   border: 1px solid var(--branco);
   border-radius: 40px;
   font-size: 24px;
