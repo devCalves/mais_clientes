@@ -481,7 +481,7 @@ iframe {
   }
 
   #profissao {
-    height: 145dvh;
+    height: 200dvh;
   }
 
   #profissao h1 {
@@ -494,14 +494,15 @@ iframe {
   }
 
   #profissao ul {
-    display: flex;
-    gap: 8px;
+    display: block;
     padding: 8px;
     list-style: none;
     text-transform: uppercase;
   }
 
   #profissao ul li {
+    margin-bottom: 8px;
+    width: 80%;
     padding: 16px;
     border: 1px solid var(--branco);
     border-radius: 40px;
@@ -509,7 +510,7 @@ iframe {
   }
 
   #perguntas {
-    padding-top: 115px;
+    padding-top: 85px;
     height: 130dvh;
   }
 
@@ -522,6 +523,7 @@ iframe {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 16px;
     width: 90%;
+    height: auto;
     font-size: 1.1rem;
     transition: all 0.5s ease-in-out;
   }
