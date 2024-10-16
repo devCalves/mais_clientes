@@ -30,7 +30,8 @@ body {
   justify-content: center;
   max-width: 1280px;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  padding: 64px;
 }
 
 span {
@@ -40,11 +41,12 @@ span {
 
 #home {
   color: var(--branco);
-  height: 97dvh;
+  height: auto;
+  padding: 0;
 }
 
 #div-home {
-  height: 100%;
+  height: 120%;
   margin: 0;
 }
 
@@ -59,13 +61,8 @@ h3 {
   font-weight: bold;
 }
 
-#home h2 {
-  font-size: 32px;
-  padding: 16px 0;
-}
-
 #home h3 {
-  margin-bottom: 48px;
+  margin-bottom: 24px;
   font-size: 44px;
   width: 100%;
 }
@@ -75,7 +72,6 @@ h3 {
 }
 
 #home-img-div img {
-  height: auto;
   width: 100%;
   filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
 }
@@ -620,7 +616,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     width: 90%;
   }
 
@@ -837,7 +833,7 @@ iframe {
 
   #perguntas {
     width: 100%;
-    height: 120vh;
+    height: auto;
     max-height: 200%;
   }
 
@@ -851,7 +847,7 @@ iframe {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 16px;
-    width: 90vw;
+    width: 100%;
     font-size: 16px;
     transition: all 0.5s ease-in-out;
   }
@@ -992,7 +988,7 @@ iframe {
 
   .fundo-claro,
   .fundo-marinho {
-    width: auto;
+    width: 100%;
     padding: 40px 0;
     overflow: hidden;
   }
