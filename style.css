@@ -115,6 +115,7 @@ div {
 #benefits {
   color: var(--preto);
   text-align: center;
+  padding-bottom: 64px;
 }
 
 #benefits h2 {
@@ -171,6 +172,7 @@ div {
 
 #sobre h2,
 #sobre2 h2 {
+  padding-top: 64px;
   font-size: 50px;
   margin-bottom: 20px;
   text-align: left;
@@ -394,7 +396,7 @@ iframe {
 
   #home {
     height: a;
-    margin-bottom: 250px;
+    padding-bottom: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -412,7 +414,8 @@ iframe {
   }
 
   #div-home a {
-    font-size: 1em;
+    font-size: 1.3em;
+    white-space: nowrap;
     margin-left: 0;
   }
 
@@ -435,26 +438,32 @@ iframe {
     max-width: 100dvw;
     height: auto;
     width: 100dvw;
+    padding-bottom: 32px;
   }
 
   #benefits h2 {
-    margin: 16px 0;
-    font-size: 0.9rem;
+    margin: 8px 0;
+    font-size: 1rem;
   }
 
   #benefits h3 {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
+    margin-bottom: 8px;
   }
 
   #benefits ul {
+    display: inline-block;
+    vertical-align: middle;
     width: 80%;
-    padding-bottom: 16px;
+    height: auto;
   }
 
   #benefits ul h2 {
     font-size: 1.2rem;
     color: var(--amarelo);
+    display: inline-block;
+    vertical-align: middle;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -462,6 +471,7 @@ iframe {
     font-size: 0.8rem;
     width: 100%;
     margin: 4px 0;
+    padding: 1em;
     font-weight: bold;
     color: var(--branco);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -470,16 +480,14 @@ iframe {
 
   #sobre {
     height: auto;
+    padding-bottom: 32px;
   }
 
   #sobre img {
-    position: relative;
-    left: -15dvw;
-    height: 55vh;
-    width: 55vh;
-    padding-right: 48px;
+    height: auto;
+    width: 100%;
     border-radius: 50%;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
   }
 
   #sobre h2,
@@ -499,6 +507,7 @@ iframe {
 
   #sobre2 {
     height: auto;
+    padding-bottom: 32px;
   }
 
   #profissao {
@@ -531,7 +540,6 @@ iframe {
   }
 
   #perguntas {
-    padding-top: 85px;
     height: auto;
   }
 
@@ -549,7 +557,7 @@ iframe {
     transition: all 0.5s ease-in-out;
   }
   #depoimentos {
-    height: 320dvh;
+    height: auto;
   }
 
   #depoimentos h1 {
@@ -564,11 +572,16 @@ iframe {
   }
 
   #objetivo {
-    height: 220dvh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
+
+  #objetivo p {
+    font-size: 0.8rem;
+  }
+
   .cta-container {
     text-align: center;
     background-color: var(--musgo);
@@ -576,8 +589,8 @@ iframe {
     padding: 30px;
     border-radius: 8px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    height: 95dvh;
-    width: 90dvw;
+    height: auto;
+    width: 100%;
     margin: 32px 0;
   }
 
@@ -695,7 +708,8 @@ iframe {
   #div-home a {
     margin-left: 64px;
     color: var(--branco);
-    font-size: 22px;
+    font-size: 150%;
+    white-space: nowrap;
     padding: 16px 32px;
     text-decoration: none;
     border-radius: 40px;
