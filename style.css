@@ -89,7 +89,7 @@ h4 {
 
 #cta-button {
   color: var(--branco);
-  font-size: 36px;
+  font-size: 32px;
   padding: 20px 32px;
   white-space: nowrap;
   text-decoration: none;
@@ -270,6 +270,15 @@ details[open] .content {
   display: block; /* Exibe o conteúdo quando <details> está aberto */
 }
 
+summary {
+  margin: 12px;
+  font-weight: bold;
+}
+
+details[open] summary {
+  color: var(--claro);
+}
+
 #depoimentos {
   padding: auto 0;
   height: auto;
@@ -407,10 +416,15 @@ iframe {
 
   #home {
     height: a;
-    padding-bottom: 250px;
+    padding-bottom: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  #home h4 {
+    font-size: 1.2em;
+    text-align: center;
   }
 
   #div-home {
@@ -425,7 +439,7 @@ iframe {
   }
 
   #div-home a {
-    font-size: 1.3em;
+    font-size: 1em;
     white-space: nowrap;
     margin-left: 0;
   }
@@ -446,47 +460,11 @@ iframe {
   }
 
   #benefits {
-    max-width: 100dvw;
     height: auto;
-    width: 100dvw;
-    padding-bottom: 32px;
   }
 
   #benefits h2 {
-    margin: 8px 0;
-    font-size: 1rem;
-  }
-
-  #benefits h3 {
-    font-size: 1em;
-    font-weight: 400;
-    margin-bottom: 8px;
-  }
-
-  #benefits ul {
-    display: inline-block;
-    vertical-align: middle;
-    width: 80%;
-    height: auto;
-  }
-
-  #benefits ul h2 {
-    font-size: 1.2rem;
-    color: var(--amarelo);
-    display: inline-block;
-    vertical-align: middle;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  #benefits ul li {
-    font-size: 0.8rem;
-    width: 100%;
-    margin: 4px 0;
-    padding: 1em;
-    font-weight: bold;
-    color: var(--branco);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
+    font-size: 1.3rem;
   }
 
   #sobre {
@@ -513,7 +491,7 @@ iframe {
   }
 
   p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   #sobre2 {
@@ -555,7 +533,7 @@ iframe {
   }
 
   #perguntas p {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   details {
@@ -571,10 +549,19 @@ iframe {
     height: auto;
   }
 
+  summary {
+    margin: 12px;
+    font-weight: bold;
+  }
+
+  details[open] summary {
+    color: var(--claro);
+  }
+
   #depoimentos h1 {
     text-align: center;
-    color: var(--branco);
-    margin-bottom: 48px;
+    color: var(--claro);
+    font-size: 1.4em;
   }
 
   iframe {
@@ -590,7 +577,7 @@ iframe {
   }
 
   #objetivo p {
-    font-size: 0.8rem;
+    font-size: 1em;
   }
 
   .cta-container {
@@ -615,14 +602,6 @@ iframe {
     padding: 4px;
     font-size: 1rem;
     font-weight: bold;
-  }
-
-  .countdown p {
-    margin-bottom: 1px;
-  }
-
-  .countdown span {
-    font-size: 2rem;
   }
 
   .cta-button {
@@ -881,6 +860,16 @@ iframe {
 
   details[open] .content {
     display: block; /* Exibe o conteúdo quando <details> está aberto */
+  }
+
+  summary {
+    margin: 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  details[open] summary {
+    color: var(--claro);
   }
 
   #depoimentos {
