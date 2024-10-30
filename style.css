@@ -21,7 +21,16 @@ body {
 }
 
 .fundo-claro {
-  background-color: #fffefe;
+  background-color: var(--branco);
+  color: var(--preto);
+}
+
+.fundo-claro span {
+  color: var(--claro);
+}
+
+.fundo-marinho {
+  color: var(--branco);
 }
 
 .container {
@@ -36,87 +45,119 @@ body {
 
 span {
   color: var(--amarelo);
-  font-weight: 900;
+  font-weight: 700;
+}
+
+section {
+  height: auto;
 }
 
 #home {
-  color: var(--branco);
-  height: auto;
-  text-align: center;
   padding: 0;
 }
 
-#div-home {
-  height: 80%;
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-#home h1 {
-  margin-bottom: 64px;
-  font-size: 52px;
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
   font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-#home h3,
-#home h4 {
-  margin-bottom: 24px;
-  font-size: 200%;
+h3 {
+  font-size: 36px;
+  width: 105%;
   text-align: center;
-  width: 100%;
-}
-
-#home h6,
-#home h5 {
-  text-align: center;
+  margin-bottom: 12px;
 }
 
 #home h6 {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 #home h5 {
-  font-size: 36px;
-  font-weight: bold;
+  font-size: 32px;
 }
 
 #timer {
-  margin: 24px 0;
+  margin-top: 24px;
+  margin-bottom: 48px;
   display: block;
   font-size: 48px;
   text-align: center;
   color: var(--amarelo);
 }
 
-#preço h4 {
-  text-align: center;
-}
-
 #home-img-div img {
-  width: 100%;
-  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
+  width: 120%;
 }
 
 #logo {
   width: 100%;
+}
+
+#div-home a {
+  margin: 24px 0;
+}
+
+#sobre2 .cta-button {
+  color: var(--branco);
+  background-color: var(--claro);
+}
+
+img {
   height: auto;
 }
 
-#cta-button {
+a {
   color: var(--branco);
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-weight: bold;
+  background-color: var(--musgo);
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 95%;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 36px;
+}
+
+.cta-button:hover {
+  color: var(--claro);
+  background-color: var(--branco);
+}
+
+button[disabled]:hover {
+  background-color: var(--claro); /* Remove o fundo ao passar o mouse */
+  color: initial;
+}
+
+#cta-button {
   font-size: 32px;
   padding: 20px 32px;
   white-space: nowrap;
   text-decoration: none;
   border-radius: 40px;
-  text-transform: uppercase;
   font-weight: bold;
-  background-color: var(--musgo);
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 #cta-button:hover {
@@ -124,21 +165,8 @@ h4 {
   color: var(--inter);
 }
 
-.fundo-claro {
-  background-color: var(--branco);
-}
-
-div {
-  height: auto;
-}
-
-.fundo-claro span {
-  color: var(--claro);
-}
-
 #benefits {
   display: flex;
-  color: var(--branco);
   text-align: center;
   align-items: center;
   padding: 32px 0;
@@ -146,30 +174,14 @@ div {
 
 #benefits h2 {
   text-transform: uppercase;
-  font-size: 40px;
-}
-
-#sobre {
-  height: auto;
-  color: var(--preto);
-  text-align: justify;
 }
 
 #sobre img {
-  height: auto;
   width: 80%;
 }
 
-#sobre h2,
-#sobre2 h2 {
+#sobre h1 {
   padding-top: 64px;
-  font-size: 50px;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-#sobre p {
-  text-align: justify;
 }
 
 p {
@@ -178,7 +190,6 @@ p {
 }
 
 #sobre2 img {
-  height: auto;
   width: 100%;
   border-radius: 40px;
   margin-left: 64px;
@@ -196,47 +207,22 @@ p {
   display: flex;
   flex-direction: column;
   padding: 3%;
-  color: var(--branco);
-}
-
-#new h1 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 32px 0;
-}
-
-#new h2 {
-  text-align: center;
-  text-transform: uppercase;
-  margin: 32px 0;
-}
-
-#new p {
-  text-align: justify;
-  margin: 32px 0;
 }
 
 #profissao {
-  color: var(--branco);
   text-align: center;
   display: flex;
   flex-direction: column;
   padding: 64px 0;
 }
 
-#profissao p {
-  text-align: justify;
-}
-
 #profissao h1 {
-  font-size: 54px;
   margin-bottom: 32px;
 }
 
 #profissao h2 {
   color: var(--amarelo);
-  font-size: 40px;
-  font-weight: 900;
+  font-weight: 700;
   margin: 32px 0;
 }
 
@@ -248,6 +234,7 @@ p {
   padding: 12px;
   list-style: none;
   text-transform: uppercase;
+  margin-bottom: 32px;
 }
 
 #profissao ul li {
@@ -275,9 +262,9 @@ summary {
 details {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 16px;
+  padding: 16px 0;
   width: 1084px;
-  font-size: 24px;
+  font-size: 20px;
   text-align: left;
 
   transition: all 0.5s ease-in-out;
@@ -293,16 +280,16 @@ details[open] .content {
 
 summary {
   margin: 12px;
+  font-size: 32px;
   font-weight: bold;
+}
+
+summary p {
+  padding-left: 32px;
 }
 
 details[open] summary {
   color: var(--claro);
-}
-
-#depoimentos {
-  padding: auto 0;
-  height: auto;
 }
 
 #depoimentos h1 {
@@ -326,10 +313,6 @@ iframe {
   height: 440px;
 }
 
-#objetivo {
-  color: var(--branco);
-}
-
 #objetivo h1,
 #objetivo h2,
 #objetivo p {
@@ -337,20 +320,17 @@ iframe {
 }
 
 #objetivo h1 {
-  font: 40px;
+  text-align: left;
+  width: 110%;
 }
 
-#objetivo p {
-  font-size: 18px;
-}
-
-#objetivo span {
-  color: var(--amarelo);
+#objetivo h2 {
+  font-size: 28px;
 }
 
 #objetivo img {
   height: auto;
-  width: 80%;
+  width: 90%;
 }
 
 #img-end {
@@ -369,11 +349,9 @@ iframe {
 
 .cta-container h1 {
   margin-bottom: 24px;
-  font-size: 48px;
 }
 
 .cta-container span {
-  font-weight: 700;
   color: var(--amarelo);
 }
 
@@ -382,39 +360,8 @@ iframe {
   padding: 4px;
   font-size: 18px;
   margin-bottom: 16px;
-  font-weight: bold;
+  font-weight: 400;
   text-transform: uppercase;
-}
-
-#sobre2 .cta-button {
-  color: var(--branco);
-  background-color: var(--claro);
-}
-
-.cta-button {
-  display: inline-block;
-  padding: 15px 30px;
-  font-size: 1.2rem;
-  color: var(--branco);
-  background-color: var(--musgo);
-  border-radius: 5px;
-  width: 95%;
-  text-decoration: none;
-  text-align: center;
-  margin-top: 36px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  color: var(--claro);
-  background-color: var(--branco);
-}
-
-button[disabled]:hover {
-  background-color: var(--claro); /* Remove o fundo ao passar o mouse */
-  color: initial;
 }
 
 #footer {
@@ -427,8 +374,6 @@ button[disabled]:hover {
 
 #footer p {
   margin: 0 auto;
-  color: var(--preto);
-  font-weight: bold;
 }
 
 #incluso {
@@ -436,10 +381,6 @@ button[disabled]:hover {
   height: auto;
   flex-direction: column;
   color: var(--branco);
-}
-
-#incluso p {
-  font-size: 20px;
 }
 
 #incluso ul {
@@ -748,7 +689,7 @@ button[disabled]:hover {
     align-items: center;
     justify-content: center;
     height: auto;
-    width: 90%;
+    width: 85%;
   }
 
   span {
@@ -757,16 +698,26 @@ button[disabled]:hover {
   }
 
   #home {
-    width: 98%;
-    color: var(--branco);
     height: auto;
   }
 
   #div-home {
-    height: auto;
-    left: 3vw;
-    width: 58vw;
-    margin: 0;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
   }
 
   #home h1 {
@@ -774,45 +725,21 @@ button[disabled]:hover {
     font-size: 52px;
   }
 
-  h1,
-  h2,
-  h3 {
-    font-weight: bold;
-  }
-
-  #home h3,
-  #home h4 {
-    margin-left: 64px;
-    margin-bottom: 12px;
-    font-size: 28px;
-    width: 90%;
-  }
-
   #home h6,
   #home h5 {
     text-align: center;
-    margin-left: 64px;
   }
 
   #timer {
-    margin: 24px 0;
-    margin-left: 64px;
+    margin: 6px 0;
     font-size: 40px;
     text-align: center;
     color: var(--amarelo);
   }
 
-  #home-img-div {
-    margin-left: 0;
-    height: auto;
-  }
-
   #home-img-div img {
-    height: 125%;
-    width: 120%;
-    margin: 0;
-    overflow-y: hidden;
-    filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.5));
+    height: 80ch;
+    width: 55ch;
   }
 
   #logo {
@@ -821,58 +748,66 @@ button[disabled]:hover {
   }
 
   #div-home a {
-    margin-left: 64px;
-    color: var(--branco);
-    font-size: 150%;
-    white-space: nowrap;
-    padding: 16px 32px;
-    text-decoration: none;
-    border-radius: 40px;
-    font-weight: bold;
-    background-color: var(--musgo);
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  }
-
-  #div-home a:hover {
-    background-color: var(--branco);
-    color: var(--claro);
-  }
-
-  .fundo-claro {
-    background-color: var(--branco);
-  }
-
-  .fundo-claro span {
-    color: var(--claro);
-  }
-
-  #benefits {
-    color: var(--branco);
-    height: auto;
+    margin-left: 52px;
+    font-size: 1em;
     text-align: center;
+    white-space: nowrap;
+  }
+
+  .cta-container {
+    text-align: center;
+    width: auto;
+  }
+
+  .cta-container h1 {
+    margin-bottom: 24px;
+  }
+
+  .cta-container h2 {
+    margin-left: 0;
+  }
+
+  .cta-container p {
+    text-align: left;
+    margin: 0;
+    padding: 4px;
+    font-size: 12px;
+    margin-bottom: 8px;
+    word-wrap: break-word;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .cta-button {
+    white-space: nowrap;
+    padding: 15px 30px;
+    font-size: 1em;
+    margin-top: 36px;
+  }
+
+  #sobre2 .cta-button {
+    padding: 15px 30px;
+    font-size: 0.7em;
   }
 
   #benefits h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
-  #sobre {
-    color: var(--preto);
-    text-align: justify;
-    margin: 0;
-    overflow-y: hidden;
+  #sobre h1 {
+    padding-top: 0;
+    text-transform: initial;
   }
 
   #sobre img {
-    margin-left: 25%;
+    margin-left: 20%;
+    margin-bottom: 32px;
     height: auto;
     width: 70%;
     border-radius: 50%;
   }
 
-  #sobre h2,
-  #sobre2 h2 {
-    font-size: 60px;
+  #sobre h2 {
     margin-bottom: 8px;
     text-align: left;
     margin-left: 64px;
@@ -883,95 +818,45 @@ button[disabled]:hover {
   }
 
   p {
-    font-size: 20px;
-  }
-
-  #sobre2 span {
-    color: var(--amarelo);
+    font-size: 18px;
   }
 
   #profissao {
-    color: var(--branco);
-    text-align: center;
-    width: 80vw;
     height: auto;
   }
 
   #profissao h1 {
-    font-size: 40px;
     margin-bottom: 32px;
-  }
-
-  #profissao h2 {
-    color: var(--amarelo);
-    font-size: 40px;
-    font-weight: 900;
-    margin: 32px 0;
   }
 
   #profissao ul {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 44%);
-    list-style: none;
-    text-transform: uppercase;
   }
 
   #profissao ul li {
-    text-align: center;
     width: 120%;
-    padding: 8px 24px;
     border: 1px solid var(--branco);
     border-radius: 40px;
     font-size: 14px;
   }
 
-  #perguntas {
-    height: auto;
-  }
-
-  summary {
-    all: unset;
-    cursor: pointer;
-    width: 100%;
-    padding-bottom: 8px;
-  }
-
   details {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 16px;
     width: 80vw;
-    font-size: 16px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  details[open] .content {
-    display: block; /* Exibe o conteúdo quando <details> está aberto */
   }
 
   summary {
-    margin: 12px;
     font-size: 1.5rem;
-    font-weight: bold;
   }
 
   details[open] summary {
     color: var(--claro);
   }
 
-  #depoimentos {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    margin: 0;
-    padding: 20px 0;
-  }
-
   #depoimentos-video {
-    margin-left: 12vw;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(3, 33%);
     column-gap: 1%;
     row-gap: 1%;
@@ -979,10 +864,7 @@ button[disabled]:hover {
   }
 
   #depoimentos h1 {
-    text-align: center;
-    margin-left: 12vw;
     margin-bottom: 60px;
-    color: var(--claro);
   }
 
   iframe {
@@ -992,77 +874,18 @@ button[disabled]:hover {
 
   #objetivo {
     display: flex;
-    height: auto;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  #objetivo-final {
-    padding-bottom: 0;
+  #final-btn {
+    margin-bottom: 36px;
   }
-
-  #objetivo p {
-    font-size: 16px;
-  }
-
   #objetivo span {
     color: var(--amarelo);
   }
 
-  .cta-container {
-    text-align: center;
-    max-height: 737px;
-    height: auto;
-    width: 100%;
-  }
-
-  .cta-container h1 {
-    margin-bottom: 24px;
-    font-size: 40px;
-  }
-
-  .cta-container span {
-    font-weight: 700;
-  }
-
-  .cta-container p {
+  #objetivo h2 {
     text-align: left;
-    margin: 0;
-    padding: 4px;
-    font-size: 12px;
-    margin-bottom: 16px;
-    white-space: wrap;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
-  .cta-button {
-    white-space: nowrap;
-    padding: 15px 30px;
-    font-size: 1em;
-    border-radius: 5px;
-    width: 100%;
-    text-decoration: none;
-    margin-top: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-  }
-
-  #sobre2 .cta-button {
-    white-space: nowrap;
-    padding: 15px 30px;
-    font-size: 0.7em;
-    border-radius: 5px;
-    width: 100%;
-    text-decoration: none;
-    margin-top: 36px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-  }
-
-  .cta-button:hover {
-    color: var(--azul);
   }
 
   #footer {
@@ -1070,28 +893,15 @@ button[disabled]:hover {
     justify-content: center;
     align-items: center;
     height: auto;
-    padding: 0;
+    padding: 20px 0;
   }
 
   #footer p {
     margin: 0;
-    color: var(--preto);
-  }
-
-  .fundo-claro,
-  .fundo-marinho {
-    width: 100%;
-    padding: 40px 0;
-    overflow: hidden;
   }
 
   #img-end img {
-    width: 100%;
-    height: auto;
-  }
-
-  .home-class {
-    overflow-x: hidden;
-    padding: 0;
+    height: 80ch;
+    width: 50cqw;
   }
 }
