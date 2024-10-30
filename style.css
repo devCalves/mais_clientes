@@ -738,8 +738,7 @@ iframe {
   }
 
   #home-img-div img {
-    height: 80ch;
-    width: 55ch;
+    width: 100%;
   }
 
   #logo {
