@@ -6,7 +6,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom, #003d3b 0%, #07827e 100%);
+  background-image: linear-gradient(to bottom, #26aba7 0%, #07827e 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -42,6 +42,7 @@ span {
 #home {
   color: var(--branco);
   height: auto;
+  text-align: center;
   padding: 0;
 }
 
@@ -63,18 +64,36 @@ h4 {
 
 #home h3,
 #home h4 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 200%;
-  text-align: start;
+  text-align: center;
   width: 100%;
 }
 
+#home h6,
+#home h5 {
+  text-align: center;
+}
+
+#home h6 {
+  font-size: 20px;
+}
+
+#home h5 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
 #timer {
-  margin: 35px 0;
+  margin: 24px 0;
   display: block;
   font-size: 48px;
   text-align: center;
   color: var(--amarelo);
+}
+
+#preço h4 {
+  text-align: center;
 }
 
 #home-img-div img {
@@ -100,9 +119,9 @@ h4 {
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
-#cta-button a:hover {
+#cta-button:hover {
   background-color: var(--branco);
-  color: var(--claro);
+  color: var(--inter);
 }
 
 .fundo-claro {
@@ -122,7 +141,7 @@ div {
   color: var(--branco);
   text-align: center;
   align-items: center;
-  padding-bottom: 64px;
+  padding: 32px 0;
 }
 
 #benefits h2 {
@@ -149,8 +168,13 @@ div {
   text-align: left;
 }
 
+#sobre p {
+  text-align: justify;
+}
+
 p {
   font-size: 24px;
+  text-align: justify;
 }
 
 #sobre2 img {
@@ -200,6 +224,10 @@ p {
   padding: 64px 0;
 }
 
+#profissao p {
+  text-align: justify;
+}
+
 #profissao h1 {
   font-size: 54px;
   margin-bottom: 32px;
@@ -230,20 +258,11 @@ p {
   font-size: 24px;
 }
 
-#profissao a {
-  background-color: var(--musgo);
-}
-
-#profissao a:hover {
-  background-color: var(--inter);
-}
-
 #perguntas {
   padding: 64px 0;
 }
 
 #perguntas h1 {
-  text-align: center;
   margin-bottom: 40px;
 }
 
@@ -259,6 +278,8 @@ details {
   padding: 16px;
   width: 1084px;
   font-size: 24px;
+  text-align: left;
+
   transition: all 0.5s ease-in-out;
 }
 
@@ -365,6 +386,11 @@ iframe {
   text-transform: uppercase;
 }
 
+#sobre2 .cta-button {
+  color: var(--branco);
+  background-color: var(--claro);
+}
+
 .cta-button {
   display: inline-block;
   padding: 15px 30px;
@@ -382,7 +408,13 @@ iframe {
 }
 
 .cta-button:hover {
-  background-color: var(--inter);
+  color: var(--claro);
+  background-color: var(--branco);
+}
+
+button[disabled]:hover {
+  background-color: var(--claro); /* Remove o fundo ao passar o mouse */
+  color: initial;
 }
 
 #footer {
@@ -399,9 +431,47 @@ iframe {
   font-weight: bold;
 }
 
+#incluso {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  color: var(--branco);
+}
+
+#incluso p {
+  font-size: 20px;
+}
+
+#incluso ul {
+  width: 80%;
+  list-style: none;
+}
+
+#incluso ul li {
+  margin: 16px 0;
+  padding: 8px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (max-width: 767px) {
   * {
     text-align: center;
+  }
+
+  #incluso ul {
+    width: 100%;
+    padding-left: none;
+    list-style: none;
+  }
+
+  #incluso ul li {
+    margin: 16px 0;
+    padding: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+
+  #incluso ul li h2 {
+    margin-bottom: 16px;
   }
 
   .container {
@@ -490,10 +560,6 @@ iframe {
     display: none;
   }
 
-  p {
-    font-size: 1rem;
-  }
-
   #sobre2 {
     height: auto;
     padding-bottom: 32px;
@@ -540,17 +606,30 @@ iframe {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 16px;
-    width: 90%;
+    padding-left: 0;
+    width: 100%;
+    text-align: left;
     height: auto;
     font-size: 1.1rem;
     transition: all 0.5s ease-in-out;
   }
+
+  details p {
+    padding-left: 16px;
+    text-align: justify;
+  }
+
+  p {
+    text-align: justify;
+  }
+
   #depoimentos {
     height: auto;
   }
 
   summary {
     margin: 12px;
+    text-align: left;
     font-weight: bold;
   }
 
@@ -604,19 +683,41 @@ iframe {
     font-weight: bold;
   }
 
-  .cta-button {
+  #sobre2 .cta-button {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: var(--branco);
     background-color: var(--claro);
     border-radius: 5px;
     width: 95%;
     text-decoration: none;
+    text-align: center;
     margin-top: 36px;
     font-weight: bold;
     text-transform: uppercase;
     transition: background-color 0.3s;
+  }
+
+  .cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: var(--branco);
+    background-color: var(--musgo);
+    border-radius: 5px;
+    width: 95%;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+
+  .cta-button:hover {
+    color: var(--claro);
+    background-color: var(--branco);
   }
 
   #footer {
@@ -626,9 +727,18 @@ iframe {
     height: 10dvh;
   }
 
+  #footer p {
+    text-align: center;
+    font-weight: 400;
+  }
+
   .fundo-claro,
   .fundo-marinho {
     width: auto;
+  }
+
+  p {
+    font-size: 1.2rem;
   }
 }
 
@@ -673,9 +783,23 @@ iframe {
   #home h3,
   #home h4 {
     margin-left: 64px;
-    margin-bottom: 48px;
+    margin-bottom: 12px;
     font-size: 28px;
     width: 90%;
+  }
+
+  #home h6,
+  #home h5 {
+    text-align: center;
+    margin-left: 64px;
+  }
+
+  #timer {
+    margin: 24px 0;
+    margin-left: 64px;
+    font-size: 40px;
+    text-align: center;
+    color: var(--amarelo);
   }
 
   #home-img-div {
@@ -729,43 +853,7 @@ iframe {
   }
 
   #benefits h2 {
-    font-size: 36px;
-  }
-
-  #benefits h3 {
-    margin: 48px;
-    font-size: 24px;
-    font-weight: 400;
-    text-transform: normal-case;
-  }
-
-  #benefits ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    list-style: none;
-    background-color: var(--inter);
-    padding: 24px;
-    width: 640px;
-    height: 400px;
-    border-radius: 40px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-  }
-
-  #benefits ul h2 {
-    font-size: 40px;
-    margin: 0;
-    color: var(--amarelo);
-    border-bottom: 1px solid var(--musgo);
-  }
-
-  #benefits ul li {
-    width: 100%;
-    font-weight: bold;
-    color: var(--branco);
-    font-size: 18px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    align-items: center;
+    font-size: 32px;
   }
 
   #sobre {
@@ -922,8 +1010,6 @@ iframe {
 
   .cta-container {
     text-align: center;
-    background-color: var(--musgo);
-    color: var(--branco);
     max-height: 737px;
     height: auto;
     width: 100%;
@@ -953,8 +1039,6 @@ iframe {
     white-space: nowrap;
     padding: 15px 30px;
     font-size: 1em;
-    color: var(--branco);
-    background-color: var(--claro);
     border-radius: 5px;
     width: 100%;
     text-decoration: none;
@@ -968,8 +1052,6 @@ iframe {
     white-space: nowrap;
     padding: 15px 30px;
     font-size: 0.7em;
-    color: var(--branco);
-    background-color: var(--claro);
     border-radius: 5px;
     width: 100%;
     text-decoration: none;
@@ -980,7 +1062,6 @@ iframe {
   }
 
   .cta-button:hover {
-    background-color: var(--inter);
     color: var(--azul);
   }
 
