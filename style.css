@@ -54,6 +54,7 @@ section {
 
 #home {
   padding: 0;
+  height: auto;
 }
 
 h1 {
@@ -79,7 +80,6 @@ h6 {
 
 h3 {
   font-size: 36px;
-  width: 105%;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -94,32 +94,31 @@ h3 {
 
 #timer {
   margin-top: 24px;
-  margin-bottom: 48px;
   display: block;
-  font-size: 48px;
+  font-size: 54px;
   text-align: center;
   color: var(--amarelo);
 }
 
-#home-img-div img {
-  width: 120%;
+#logo {
+  width: 70%;
 }
 
-#logo {
-  width: 100%;
+#div-home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #div-home a {
-  margin: 24px 0;
+  margin: 24px auto;
+  text-align: center;
+  width: 50%;
 }
 
 #sobre2 .cta-button {
   color: var(--branco);
   background-color: var(--claro);
-}
-
-img {
-  height: auto;
 }
 
 a {
@@ -209,6 +208,11 @@ p {
   padding: 3%;
 }
 
+#new h1,
+#new h2 {
+  font-size: 34px;
+}
+
 #profissao {
   text-align: center;
   display: flex;
@@ -240,7 +244,7 @@ p {
 #profissao ul li {
   padding: 16px;
   width: 25%;
-  border: 1px solid var(--branco);
+  border: 1px solid var(--preto);
   border-radius: 40px;
   font-size: 24px;
 }
@@ -289,7 +293,7 @@ summary p {
 }
 
 details[open] summary {
-  color: var(--claro);
+  color: var(--amarelo);
 }
 
 #depoimentos h1 {
@@ -381,6 +385,7 @@ iframe {
   height: auto;
   flex-direction: column;
   color: var(--branco);
+  padding-bottom: 64px;
 }
 
 #incluso ul {
@@ -433,14 +438,8 @@ iframe {
     justify-content: center;
   }
 
-  #home h4 {
-    font-size: 1.2em;
-    text-align: center;
-  }
-
-  #div-home {
-    height: 100%;
-    margin: 0;
+  #timer {
+    font-size: 2rem;
   }
 
   #div-home h3 {
@@ -449,8 +448,27 @@ iframe {
     margin-left: 0;
   }
 
+  h1 {
+    font-size: 2.5em;
+  }
+
+  #new {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  #new h1,
+  #new h2 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
   #div-home a {
     font-size: 1em;
+    width: 100%;
     white-space: nowrap;
     margin-left: 0;
   }
@@ -470,14 +488,6 @@ iframe {
     max-width: 100%;
   }
 
-  #benefits {
-    height: auto;
-  }
-
-  #benefits h2 {
-    font-size: 1.3rem;
-  }
-
   #sobre {
     height: auto;
     padding-bottom: 32px;
@@ -492,8 +502,6 @@ iframe {
 
   #sobre h2,
   #sobre2 h2 {
-    font-size: 2rem;
-    text-align: center;
     margin-bottom: 8px;
   }
 
@@ -502,7 +510,6 @@ iframe {
   }
 
   #sobre2 {
-    height: auto;
     padding-bottom: 32px;
   }
 
@@ -510,13 +517,8 @@ iframe {
     height: auto;
   }
 
-  #profissao h1 {
-    font-size: 1.7rem;
-  }
-
   #profissao h2 {
     color: var(--amarelo);
-    font-size: 1.7rem;
   }
 
   #profissao ul {
@@ -530,7 +532,7 @@ iframe {
     margin-bottom: 8px;
     width: 80%;
     padding: 16px;
-    border: 1px solid var(--branco);
+    border: 1px solid var(--preto);
     border-radius: 40px;
     font-size: 0.9rem;
   }
@@ -557,25 +559,22 @@ iframe {
 
   details p {
     padding-left: 16px;
-    text-align: justify;
   }
 
   p {
     text-align: justify;
-  }
-
-  #depoimentos {
-    height: auto;
+    font-size: 1em;
   }
 
   summary {
+    font-size: 1.2em;
     margin: 12px;
     text-align: left;
     font-weight: bold;
   }
 
   details[open] summary {
-    color: var(--claro);
+    color: var(--amarelo);
   }
 
   #depoimentos h1 {
@@ -586,7 +585,7 @@ iframe {
 
   iframe {
     width: 90%;
-    height: 30dvh;
+    height: 300px;
   }
 
   #objetivo {
@@ -594,10 +593,6 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-
-  #objetivo p {
-    font-size: 1em;
   }
 
   .cta-container {
@@ -677,10 +672,6 @@ iframe {
   .fundo-marinho {
     width: auto;
   }
-
-  p {
-    font-size: 1.2rem;
-  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -737,25 +728,20 @@ iframe {
     color: var(--amarelo);
   }
 
-  #home-img-div img {
-    width: 100%;
-  }
-
   #logo {
     width: 100%;
-    height: auto;
   }
 
   #div-home a {
-    margin-left: 52px;
     font-size: 1em;
+    width: 80%;
     text-align: center;
     white-space: nowrap;
   }
 
   .cta-container {
     text-align: center;
-    width: auto;
+    width: 33.33%;
   }
 
   .cta-container h1 {
@@ -785,7 +771,8 @@ iframe {
   }
 
   #sobre2 .cta-button {
-    padding: 15px 30px;
+    padding: 15px 0;
+    width: 100%;
     font-size: 0.7em;
   }
 
@@ -836,7 +823,7 @@ iframe {
 
   #profissao ul li {
     width: 120%;
-    border: 1px solid var(--branco);
+    border: 1px solid var(--preto);
     border-radius: 40px;
     font-size: 14px;
   }
@@ -850,7 +837,7 @@ iframe {
   }
 
   details[open] summary {
-    color: var(--claro);
+    color: var(--amarelo);
   }
 
   #depoimentos-video {
