@@ -54,6 +54,7 @@ section {
 
 #home {
   padding: 0;
+  padding-bottom: 64px;
   height: auto;
 }
 
