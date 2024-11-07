@@ -325,7 +325,6 @@ iframe {
 }
 
 #objetivo h1 {
-  text-align: left;
   width: 110%;
 }
 
@@ -336,6 +335,12 @@ iframe {
 #objetivo img {
   height: auto;
   width: 90%;
+}
+
+#garantia {
+  font-weight: bold;
+  text-align: center;
+  font-size: 24px;
 }
 
 #img-end {
@@ -349,7 +354,14 @@ iframe {
   color: var(--branco);
   padding: 30px;
   height: auto;
+  outline: 1px solid white;
+  outline-offset: 1px;
   margin: 5% 0;
+}
+
+.fa-solid,
+.fa-brands {
+  color: var(--inter);
 }
 
 .cta-container h1 {
@@ -398,6 +410,11 @@ iframe {
   margin: 16px 0;
   padding: 8px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.fundo-claro .cta-button:hover {
+  background-color: var(--inter);
+  color: var(--branco);
 }
 
 @media screen and (max-width: 767px) {
